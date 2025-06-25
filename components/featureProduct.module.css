@@ -1,0 +1,93 @@
+/* Products Section */
+.section-title {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: -2px;
+  position: relative;
+  display: inline-block;
+}
+.headLn{
+  text-align: left;
+  font-size: 1.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-stretch: expanded;
+}
+.products {
+  padding: 2rem 2rem;
+  background: #f8f8f8;
+  position: relative;
+}
+.centx{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.products-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+
+}
+.productcard{
+  background-color: rgb(232, 229, 229);
+}
+.WearItemImage{
+  aspect-ratio: 1/1;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.absBtn{
+  border-width: 0;
+  background-color: rgb(180, 180, 180);
+  cursor: pointer;
+  position: absolute;
+  z-index: 99999;
+  font-size: 1.3rem;
+  padding: 5px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.vis{
+  cursor: pointer;
+  background-color: #3c175f;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  border-width: 0;
+  border-radius: 18px;
+  padding: 8px 20px ;
+}
+.rmvBtn{
+  background-color: rgb(233, 41, 41) !important;
+  margin: .4rem !important;
+  border-radius: 3px !important;
+  padding: 5px !important;
+}
+@media (max-width:  675px){
+ .section-title{
+  font-size: 2.3rem;
+ }
+}

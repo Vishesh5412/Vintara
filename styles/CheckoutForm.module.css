@@ -1,0 +1,97 @@
+.checkoutContainer {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .formRow .formGroup {
+    flex: 1;
+  }
+  
+  .label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .primaryButton {
+    flex: 1;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primaryButton:hover {
+    background-color: #333;
+  }
+  
+  .secondaryButton {
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .secondaryButton:hover {
+    border-color: #000;
+  }
+  @media (max-width: 550px){
+    .formRow{
+        display: flex;
+        flex-direction: column;
+    }
+  }

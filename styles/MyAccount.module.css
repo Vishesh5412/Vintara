@@ -1,0 +1,86 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+  }
+  .flexDv{
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #333;
+    font-weight: 500;
+  }
+  .mailDv{
+    border: 1px solid rgb(231, 230, 230);
+    padding: 10px;
+    margin-bottom: 1rem;
+
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .input,
+  .textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  .input  label{
+   margin: 5px;
+  }
+  .button {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 550px){
+    .flexDv{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .vSjnk{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    list-style-type: none;
+    color: rgb(9, 44, 140);
+  }
