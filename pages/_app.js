@@ -8,7 +8,7 @@ import { CartProvider } from "../context/cart/cartContext";
 import { UserProvider } from "../context/user/userContext";
 import { LoadingProvider } from "../context/loadingContext";
 import { AlertProvider } from "../context/alertContext";
-// import Chatbot from "../components/Chatbot";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -18,6 +18,17 @@ function MyApp({ Component, pageProps }) {
       <CartProvider>
         <LoadingProvider>
           <AlertProvider>
+            <Head>
+              <title>Vintara - Your Ecommerce Store</title>
+              <link
+                rel="icon"
+                type="image/png"
+                sizes="32x32"
+                href="/fav-image.png"
+              />
+               
+
+            </Head>
             <Component {...pageProps} />
             {/* {router.pathname === "/" && <Chatbot />} */}
             <ToastContainer />
